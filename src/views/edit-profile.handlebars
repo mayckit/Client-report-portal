@@ -1,0 +1,54 @@
+<div class="edit-profile-container">
+    <div class="edit-profile-box">
+        <h2 class="form-title">Editar Perfil</h2>
+        <p class="form-subtitle">Mantenha as suas informações sempre atualizadas!</p>
+
+        <form action="/edit-profile" method="POST" class="formLogin-profile">
+
+            <h3 class="form-section-header">Dados da Empresa</h3>
+
+            <!-- Linha 1: Razão Social e CNPJ -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="companyName">Razão Social:</label>
+                    <input type="text" id="companyName" name="companyName" value="{{companyData.companyName}}" required>
+                </div>
+                <div class="form-group">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" name="cnpj" value="{{companyData.cnpj}}" required>
+                </div>
+            </div>
+
+            <!-- Linha 2: Telefone e Endereço -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" value="{{companyData.phone}}">
+                </div>
+                 <div class="form-group">
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" name="address" value="{{companyData.address}}">
+                </div>
+            </div>
+
+            <h3 class="form-section-header">Dados de Acesso</h3>
+
+            <!-- Linha 3: Email e Nova Senha -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="{{userEmail}}" required>
+                </div>
+                 <div class="form-group">
+                    <label for="password">Nova Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="Deixe em branco para não alterar">
+                </div>
+            </div>
+
+            <div class="edit-profile-buttons">
+                 <button type="submit" class="btn-perfil">Salvar Alterações</button>
+                 <a href="/dashboard" class="btn-perfil btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>

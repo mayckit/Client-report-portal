@@ -1,0 +1,36 @@
+<section class="perfil-usuario-container">
+  <div class="perfil-card">
+    <div class="user-data-container">
+      <h2>Editar Meu Perfil de Administrador</h2>
+      <form id="adminProfileEditForm">
+        <div class="form-group">
+          <label for="adminEmail">Email:</label>
+          <input type="email" id="adminEmail" name="email" value="{{profileData.email}}" required>
+        </div>
+        <div class="form-group">
+          <label for="adminPassword">Nova Senha (deixe em branco para não alterar):</label>
+          <input type="password" id="adminPassword" name="password" placeholder="********">
+        </div>
+        
+        <div class="form-group">
+          <label for="adminFullName">Nome Completo:</label>
+          <input type="text" id="adminFullName" name="fullName" value="{{profileData.employee.fullName}}" required>
+        </div>
+        <div class="form-group">
+          <label for="adminCpf">CPF:</label>
+          <input type="text" id="adminCpf" name="cpf" value="{{profileData.employee.cpf}}" required>
+        </div>
+
+        <div id="adminProfileFeedback" style="margin-top: 15px; font-weight: bold;"></div>
+        <button type="submit" class="btn-perfil">Salvar Alterações</button>
+        <a href="/adminDashboard" class="btn-perfil-cancel">Cancelar</a>
+      </form>
+    </div>
+  </div>
+
+  <div class="tabela-relatorios-container" style="display: none;">
+    <h2>Relatórios</h2>
+    <p>Esta página é para edição do perfil de administrador, não contém relatórios.</p>
+  </div>
+</section>
+

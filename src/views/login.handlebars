@@ -1,0 +1,21 @@
+  <section>
+    <div class="page">
+      <form method="POST" class="formLogin" action="/login">
+        <h1>Login</h1>
+        <p>Digite seus dados de acesso abaixo.</p>
+                    {{#if erro}}
+                <div class="erro-msg">{{erro}}</div>
+                    {{/if}}
+
+        <label for="email">EMAIL</label>
+        <input type="text" name="email" id="email" placeholder="Digite seu email" required autofocus />
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required />
+
+        <a href="#">Esqueci minha senha</a>
+        <input type="submit" value="Acessar" id="signin" class="btn-login" />
+      </form>
+    </div>
+    <script src="../../public/js/main.js"></script>
+  </section>
