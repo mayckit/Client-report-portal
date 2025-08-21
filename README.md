@@ -50,7 +50,7 @@ Siga os passos abaixo para executar o projeto localmente.
 
 5.  **Inicie o servidor:**
     ```bash
-    npm run dev
+    npm start
     ```
 
 O projeto estará rodando em `http://localhost:3000` (ou na porta que você configurou).
