@@ -1,4 +1,4 @@
-# Portal de Gestão de Clientes e Relatórios
+# Portal web de Gestão de Clientes e Relatórios
 
 ## 📖 Sobre o Projeto
 
