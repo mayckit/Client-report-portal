@@ -35,7 +35,6 @@ Siga os passos abaixo para executar o projeto localmente.
 
 2.  **Instale as dependências:**
     ```bash
-    cd nome-do-repositorio
     npm install
     ```
 
